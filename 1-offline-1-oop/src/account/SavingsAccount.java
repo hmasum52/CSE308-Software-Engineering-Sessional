@@ -33,6 +33,7 @@ public class SavingsAccount extends Account {
         if (this.balance < 1000) {
             throw new InsufficientBalanceException("Current balance is less than 1000!");
         }
+        this.balance -= amount;
     }
 
     @Override

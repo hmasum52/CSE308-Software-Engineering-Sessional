@@ -33,6 +33,7 @@ public class StudentAccount extends Account {
             throw new InvalidAmountException("Invalid transaction; current banalce is " + Util.toMoneyString(balance));
         }
 
+        this.balance -= amount;
     }
 
     @Override
@@ -42,7 +43,8 @@ public class StudentAccount extends Account {
         }
 
         if (amount > 1000) {
-            throw new InvalidAmountException("Invalid transaction; maximum allowable loan is 1,000$ for student account");
+            throw new InvalidAmountException(
+                    "Invalid transaction; maximum allowable loan is 1,000$ for student account");
         }
 
         this.balance += amount;
