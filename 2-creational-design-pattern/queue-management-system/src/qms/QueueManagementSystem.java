@@ -17,7 +17,7 @@ public class QueueManagementSystem {
     private Display display;
     private Processor processor;
 
-    // communication system
+    // The communication system for communication between the display unit and controller application
     private CommunicationModule comunicationModule;
 
     // number of display units

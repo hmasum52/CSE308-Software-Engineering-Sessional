@@ -1,7 +1,7 @@
 package qms;
 
 /**
- * factory class for creating Queue Management System Builder
+ * factory class for creating {@link QMSBuilder} instance
  */
 public class QMSFactory {
     public static QMSBuilder getQmsBuilder(String type) throws Exception {

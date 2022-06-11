@@ -1,8 +1,14 @@
+/**
+ * @author Hasan Masum(1805052)
+ */
 import environment.Environment;
 import factory.LanguageFactory;
 import font.Font;
 import parser.Parser;
 
+/**
+ * 
+ */
 public class Editor {
     private static Editor editor;
 

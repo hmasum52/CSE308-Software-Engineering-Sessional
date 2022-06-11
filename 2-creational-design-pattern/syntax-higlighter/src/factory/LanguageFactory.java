@@ -4,6 +4,9 @@ import environment.Environment;
 import font.Font;
 import parser.Parser;
 
+/**
+ * abstract factory class
+ */
 public abstract class LanguageFactory{
     public abstract Parser getParser();
     public abstract Font getFont();

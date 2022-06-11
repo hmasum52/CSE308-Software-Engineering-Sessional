@@ -1,7 +1,7 @@
 package qms;
 
 /**
- * Director class to build Queue Management System.
+ * Director class to build {@link QueueManagementSystem} instance.
  */
 public class QMSDirector {
     public void buildQMS(QMSBuilder builder, String internetType, int displayNumber) throws Exception{

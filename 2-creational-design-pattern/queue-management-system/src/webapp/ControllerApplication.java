@@ -1,5 +1,7 @@
 package webapp;
-
+/**
+ * An application to control the display units over the internet
+ */
 public class ControllerApplication implements Application{
     private double price;
 
