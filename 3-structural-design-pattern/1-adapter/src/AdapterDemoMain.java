@@ -1,4 +1,4 @@
-public class AdapterMain {
+public class AdapterDemoMain {
     public static void main(String[] args) {
         System.out.println("hello world");
         //SumCalculator sumCalculator = new SumCalculator();
