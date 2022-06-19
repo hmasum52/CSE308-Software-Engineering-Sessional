@@ -17,11 +17,11 @@ public class SumAdapter implements TildaSumCalculator { // Target
     }
 
     @Override
-    public int calculateSum(String fileName) throws Exception {
+    public void calculateSum(String fileName) throws Exception {
         String tempFileName = createTempFile(fileName);
-        int sum = sumCalculator.calculateSum(tempFileName);
+        sumCalculator.calculateSum(tempFileName);
         deleteTempFile(tempFileName);
-        return sum;
+        //return sum;
     }
 
     private String createTempFile(String fileName) throws Exception {

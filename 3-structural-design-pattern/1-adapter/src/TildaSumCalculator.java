@@ -2,5 +2,5 @@
  * target interface
  */
 public interface TildaSumCalculator {
-    public int calculateSum(String fileName) throws Exception;
+    public void calculateSum(String fileName) throws Exception;
 }

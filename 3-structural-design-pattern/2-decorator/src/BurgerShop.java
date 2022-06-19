@@ -30,7 +30,7 @@ public class BurgerShop {
         System.out.println("Total price: " + veggiBurger2.getPrice() + " takta\n");
 
         // 4. A combo meal with Veggi burger, Onion Rings, Coffee and Water
-        System.out.println("Placing meal order: A combo meal with Veggi burger, French Fry and Coke");
+        System.out.println("Placing meal order: A combo meal with Veggi burger, Onion Rings, Coffee and Water");
         Meal veggiBurger3 = new VeggiBurger();
         veggiBurger3 = new OnionRings(veggiBurger3);
         veggiBurger3 = new Coffee(veggiBurger3);
