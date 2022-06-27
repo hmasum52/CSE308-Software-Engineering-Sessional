@@ -1,10 +1,10 @@
-import appetizer.FrenchFry;
-import appetizer.OnionRings;
 import burger.BeefBurger;
 import burger.VeggiBurger;
-import drinks.Coffee;
-import drinks.Coke;
-import drinks.Water;
+import decorator.appetizer.FrenchFry;
+import decorator.appetizer.OnionRings;
+import decorator.drinks.Coffee;
+import decorator.drinks.Coke;
+import decorator.drinks.Water;
 import meal.Meal;
 
 public class BurgerShop {

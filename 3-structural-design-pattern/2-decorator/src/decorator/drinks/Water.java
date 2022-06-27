@@ -1,4 +1,4 @@
-package drinks;
+package decorator.drinks;
 
 import meal.Meal;
 

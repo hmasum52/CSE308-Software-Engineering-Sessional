@@ -1,4 +1,4 @@
-package burger;
+package decorator;
 
 import meal.Meal;
 

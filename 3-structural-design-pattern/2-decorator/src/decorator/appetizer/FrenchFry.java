@@ -1,4 +1,4 @@
-package appetizer;
+package decorator.appetizer;
 
 import meal.Meal;
 
