@@ -19,4 +19,6 @@
 ## Offline-4: Unit testing
 `java` `junit5`  
 - Instructions: [pdf](./4-unit-testing/Offline-4.pdf)
-- Implementation: [code](./4-unit-testing/unit-testing/)
+- Implementation:
+    - src code: [GradeCalculator.java](./4-unit-testing/unit-testing/src/main/java/GradeCalculator.java)
+    - test code: [GradeCalculatorTest.java](./4-unit-testing/unit-testing/src/test/java/GradeCalculatorTest.java)

@@ -4,7 +4,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 
-
+/**
+ * @author Hasan Masum(1805052)
+ */
 class GradeCalculatorTest {
 
     @Test
@@ -94,15 +96,15 @@ class GradeCalculatorTest {
         @Test
         @DisplayName("Negative mark test")
         void testNegativeGradeInput(){
-            assertThrows(Exception.class, () -> gradeCalculator.calculateGrade(-0.6));
+            assertThrows(IllegalArgumentException.class, () -> gradeCalculator.calculateGrade(-0.6));
             assertThrows(IllegalArgumentException.class, () -> gradeCalculator.calculateGrade(-10));
         }
 
         @Test
         @DisplayName("Mark greater than upper bound test")
         void testOutOfUpperBoundInput(){
-            assertThrows(Exception.class, () -> gradeCalculator.calculateGrade(300.4));
-            assertThrows(Exception.class, () -> gradeCalculator.calculateGrade(350));
+            assertThrows(IllegalArgumentException.class, () -> gradeCalculator.calculateGrade(300.4));
+            assertThrows(IllegalArgumentException.class, () -> gradeCalculator.calculateGrade(350));
         }
 
         @Test
@@ -193,15 +195,15 @@ class GradeCalculatorTest {
         @Test
         @DisplayName("Negative mark test")
         void testNegativeGradeInput(){
-            assertThrows(Exception.class, () -> gradeCalculator.calculateGrade(-0.6));
+            assertThrows(IllegalArgumentException.class, () -> gradeCalculator.calculateGrade(-0.6));
             assertThrows(IllegalArgumentException.class, () -> gradeCalculator.calculateGrade(-10));
         }
 
         @Test
         @DisplayName("Mark greater than upper bound test")
         void testOutOfUpperBoundInput(){
-            assertThrows(Exception.class, () -> gradeCalculator.calculateGrade(400.4));
-            assertThrows(Exception.class, () -> gradeCalculator.calculateGrade(450));
+            assertThrows(IllegalArgumentException.class, () -> gradeCalculator.calculateGrade(400.4));
+            assertThrows(IllegalArgumentException.class, () -> gradeCalculator.calculateGrade(450));
         }
 
         @Test

@@ -1,3 +1,6 @@
+/**
+ * @author Hasan Masum(1805052)
+ */
 public class GradeCalculator {
     private final int credit;
 
