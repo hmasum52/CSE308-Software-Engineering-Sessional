@@ -22,7 +22,7 @@ public class GradeCalculator {
 
     private char calculateGradeForThreeCredit(double marks){
         if(marks<0) throw new IllegalArgumentException("Invalid marks. Marks can't be negative");
-        int roundedMarks = (int) Math.round(marks);
+        int roundedMarks = (int) Math.ceil(marks);
         if(roundedMarks<180) return 'F';
         if(roundedMarks<210) return 'C';
         if(roundedMarks<240) return 'B';
@@ -32,7 +32,7 @@ public class GradeCalculator {
     
     private char calculateGradeForFourCredit(double marks){
         if (marks < 0) throw new IllegalArgumentException("Invalid marks. Marks can't be negative");
-        int roundedMarks = (int)Math.round(marks);
+        int roundedMarks = (int)Math.ceil(marks);
         if (roundedMarks < 240) return 'F';
         if (roundedMarks < 280) return 'C';
         if (roundedMarks < 320) return 'B';

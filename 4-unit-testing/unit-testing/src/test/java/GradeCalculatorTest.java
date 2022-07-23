@@ -67,29 +67,30 @@ class GradeCalculatorTest {
             assertEquals('A', gradeCalculator.calculateGrade(299.5));
             assertEquals('A', gradeCalculator.calculateGrade(240));
             assertEquals('A', gradeCalculator.calculateGrade(239.5));
+            assertEquals('A', gradeCalculator.calculateGrade(239.4));
         }
 
 
         @Test
         @DisplayName("B grade boundary value test")
         void testBGradeBoundaryValues(){
-            assertEquals('B', gradeCalculator.calculateGrade(239.4));
             assertEquals('B', gradeCalculator.calculateGrade(210));
             assertEquals('B', gradeCalculator.calculateGrade(209.5));
+            assertEquals('B', gradeCalculator.calculateGrade(209.4));
         }
 
         @Test
         @DisplayName("C grade boundary value test")
         void testCGradeBoundaryValues(){
-            assertEquals('C', gradeCalculator.calculateGrade(209.4));
             assertEquals('C', gradeCalculator.calculateGrade(180));
             assertEquals('C', gradeCalculator.calculateGrade(179.5));
+            assertEquals('C', gradeCalculator.calculateGrade(179.4));
         }
 
         @Test
         @DisplayName("F grade boundary value test")
         void testFGradeBoundaryValues(){
-            assertEquals('F', gradeCalculator.calculateGrade(179.4));
+            
             assertEquals('F', gradeCalculator.calculateGrade(0));
         }
 
@@ -166,29 +167,30 @@ class GradeCalculatorTest {
             assertEquals('A', gradeCalculator.calculateGrade(399.5));
             assertEquals('A', gradeCalculator.calculateGrade(320));
             assertEquals('A', gradeCalculator.calculateGrade(319.5));
+            assertEquals('A', gradeCalculator.calculateGrade(319.4));
         }
 
 
         @Test
         @DisplayName("B grade boundary value test")
         void testBGradeBoundaryValues(){
-            assertEquals('B', gradeCalculator.calculateGrade(319.4));
             assertEquals('B', gradeCalculator.calculateGrade(280));
             assertEquals('B', gradeCalculator.calculateGrade(279.5));
+            assertEquals('B', gradeCalculator.calculateGrade(279.4));
         }
 
         @Test
         @DisplayName("C grade boundary value test")
         void testCGradeBoundaryValues(){
-            assertEquals('C', gradeCalculator.calculateGrade(279.4));
             assertEquals('C', gradeCalculator.calculateGrade(240));
             assertEquals('C', gradeCalculator.calculateGrade(239.5));
+            assertEquals('C', gradeCalculator.calculateGrade(239.4));
         }
 
         @Test
         @DisplayName("F grade boundary value test")
         void testFGradeBoundaryValues(){
-            assertEquals('F', gradeCalculator.calculateGrade(239.4));
+            assertEquals('F', gradeCalculator.calculateGrade(239));
             assertEquals('F', gradeCalculator.calculateGrade(0));
         }
 
