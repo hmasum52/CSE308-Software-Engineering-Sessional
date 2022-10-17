@@ -11,7 +11,6 @@ public class Coffee extends DecoratorBase {
     public Coffee(Meal meal) {
         super(meal);
         System.out.println("Adding Coffee to the meal of price 25 taka");
-        this.meal = meal;
     }
 
     @Override
