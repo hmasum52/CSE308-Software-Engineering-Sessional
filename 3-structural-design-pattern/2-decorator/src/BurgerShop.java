@@ -1,5 +1,6 @@
 import burger.BeefBurger;
 import burger.VeggiBurger;
+import decorator.Cheese;
 import decorator.appetizer.FrenchFry;
 import decorator.appetizer.OnionRings;
 import decorator.drinks.Coffee;
@@ -13,7 +14,8 @@ public class BurgerShop {
         System.out.println("Placing meal order: Beef burger with French fry and cheese");
         Meal beefBurger = new BeefBurger();
         beefBurger = new FrenchFry(beefBurger);
-        System.out.println("Total price: " + beefBurger.getPrice()+" takta\n");
+        beefBurger = new Cheese(beefBurger);
+        System.out.println("Total price: " + beefBurger.getPrice()+" taka\n");
 
         // 2. Veggi burger with onion rings and Bottle of Water
         System.out.println("Placing meal order: Veggi burger with onion rings and Bottle of Water");
